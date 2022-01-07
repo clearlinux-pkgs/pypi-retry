@@ -17,7 +17,7 @@ BuildRequires : buildreq-distutils3
 Provides: retry
 Provides: retry-python
 Provides: retry-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(decorator)
 BuildRequires : pypi(mock)
@@ -25,7 +25,7 @@ BuildRequires : pypi(pbr)
 BuildRequires : pypi(py)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 =====
