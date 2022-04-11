@@ -4,7 +4,7 @@
 #
 Name     : pypi-retry
 Version  : 0.9.2
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/9d/72/75d0b85443fbc8d9f38d08d2b1b67cc184ce35280e4a3813cda2f445f3a4/retry-0.9.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9d/72/75d0b85443fbc8d9f38d08d2b1b67cc184ce35280e4a3813cda2f445f3a4/retry-0.9.2.tar.gz
 Summary  : Easy to use retry decorator.
@@ -14,18 +14,14 @@ Requires: pypi-retry-license = %{version}-%{release}
 Requires: pypi-retry-python = %{version}-%{release}
 Requires: pypi-retry-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: retry
-Provides: retry-python
-Provides: retry-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
 BuildRequires : pypi(decorator)
 BuildRequires : pypi(mock)
 BuildRequires : pypi(pbr)
 BuildRequires : pypi(py)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 =====
@@ -68,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641490288
+export SOURCE_DATE_EPOCH=1649700521
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
